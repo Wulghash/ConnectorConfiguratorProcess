@@ -1,6 +1,5 @@
 package net.catenax.connectorconfiguratorprocess.dto;
 
-import io.fabric8.kubernetes.client.CustomResource;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ConfiguratorDto extends CustomResource {
-    public String organization;
-    public String instance;
-    public Description description;
+public class Maintainer {
+    public String name;
+    public String email;
 }
